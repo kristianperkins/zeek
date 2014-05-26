@@ -3,8 +3,8 @@ Zeek: Zookeeper CLI for caged animals!
 
 The Z and K are for Zookeeper, the E's are just for fun.
 
-A [zookeeper] command line application that makes it easy to see what is in all those cages.  This
-CLI works best in ZSH.
+Break free from the menagerie of configuration.  Zeek is a [zookeeper] command line application
+that makes it easy to see what is in all those cages.  This CLI works best in ZSH.
 
 Turn On
 -------
