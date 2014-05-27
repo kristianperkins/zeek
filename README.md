@@ -23,7 +23,7 @@ Tune In
 Drop Out
 --------
 
-> TODO: Drop Out section should be consise.
+> TODO: Drop Out section should be concise.
 
 The goal of zeek is to provide reasonable facimilies of the unix `find` and `grep` commands for
 the Zookeeper structure, so no new learning is required.  Both find and grep return matches in
