@@ -31,7 +31,7 @@ the form of `<node> - <value>` where `node` is the full path of the node and `va
 stringified value of that node.
 
 ``ls``
-List nodes underneath the node you specified.
+    List nodes underneath the node you specified.
 Example:
 
     $ zeek ls /animals
@@ -41,7 +41,7 @@ Example:
     
 
 ``find``
-Example of find which will perform a recursive find from the root.
+    Example of find which will perform a recursive find from the root.
 
     $ zeek find /
     / -
@@ -61,7 +61,7 @@ your search:
     /animals/reptiles/crocodilia/crocodiles - hungry
 
 ``grep``
-Zeek Grep searches zookeeper node values similar to grep searching file contents.  Example of
+    Zeek Grep searches zookeeper node values similar to grep searching file contents.  Example of
 grep searching for the value `hungry` in any node:
 
     $ zeek grep hungry
