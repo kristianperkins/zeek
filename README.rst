@@ -1,26 +1,26 @@
 Zeek: Zookeeper CLI for caged animals!
 ======================================
 
-The Z and K are for Zookeeper, the E's are just for fun.
+The Z and K are for `Zookeeper <http://zookeeper.apache.org>`_, the E's are just for fun.
 
-Break free from the menagerie of configuration.  Zeek is a [zookeeper] command line application
+Break free from the menagerie of configuration.  Zeek is a ZooKeeper command line application
 that makes it easy to see what is in all those cages.  This CLI works best in ZSH.
 
-Turn On: Installation
+Turn On - (Installation)
 ---------------------
 
-To install zeek: 
+To install zeek:
 
     $ pip install git+https://github.com/krockode/zeek
 
 
-Tune In: Configuration
+Tune In - (Configuration)
 ----------------------
 
 > TODO: example of how to configure Zookeeper remote location(s.)
 
 
-Drop Out: Usage
+Drop Out - (Usage)
 ---------------
 
 > TODO: Drop Out section should be concise.
@@ -41,7 +41,7 @@ Example:
     
 
 ``find``
-Example of find which will perform a recursive find from the root:
+Example of find which will perform a recursive find from the root.
 
     $ zeek find /
     / -
@@ -67,5 +67,3 @@ grep searching for the value `hungry` in any node:
     $ zeek grep hungry
     /animals/reptiles/crocodilia/alligators - hungry
     /animals/reptiles/crocodilia/crocodiles - hungry
-
-[zookeeper]: http://zookeeper.apache.org/
