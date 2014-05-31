@@ -1,3 +1,4 @@
+
 Zeek: Zookeeper CLI for caged animals!
 ======================================
 
@@ -35,7 +36,7 @@ that node.
 
 ``ls``
     List nodes underneath the node you specified.
-Example:
+Example::
 
     $ zeek ls /animals
     /animals/ -
@@ -44,7 +45,7 @@ Example:
     
 
 ``find``
-    Example of find which will perform a recursive find from the root.
+    Example of find which will perform a recursive find from the root::
 
     $ zeek find /
     / -
@@ -58,14 +59,14 @@ Example:
     /animals/reptiles/crocodilia/crocodiles - hungry
 
 Zeek find is like `find / -name ...` and searches for zookeeper nodes that
-match your search:
+match your search::
 
     $ zeek find '*crocodile*'
     /animals/reptiles/crocodilia/crocodiles - hungry
 
 ``grep``
     Zeek Grep searches zookeeper node values similar to grep searching file
-contents.  Example of grep searching for the value `hungry` in any node:
+contents.  Example of grep searching for the value `hungry` in any node::
 
     $ zeek grep hungry
     /animals/reptiles/crocodilia/alligators - hungry
