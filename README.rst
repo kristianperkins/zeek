@@ -45,7 +45,8 @@ Example::
     
 
 ``find``
-    Example of find which will perform a recursive find from the root::
+    Example of find which will perform a recursive find from the root.
+::
 
     $ zeek find /
     / -
