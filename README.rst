@@ -1,6 +1,3 @@
-
-
-
 Zeek: Zookeeper CLI for caged animals!
 ======================================
 
@@ -30,8 +27,6 @@ to connect to e.g. host1:2181,host2:2181
 
 Drop Out - (Usage)
 ---------------
-
-> TODO: Drop Out section should be concise.
 
 The goal of zeek is to provide reasonable facimilies of the unix `find` and
 `grep` commands for the Zookeeper structure, so no new learning is required.
