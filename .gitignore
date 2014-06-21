@@ -54,3 +54,4 @@ docs/_build/
 
 # vi stuff
 *.swp
+*.swo

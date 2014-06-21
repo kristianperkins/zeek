@@ -22,7 +22,10 @@ To install zeek:
 Tune In - (Configuration)
 ----------------------
 
-> TODO: example of how to configure Zookeeper remote location(s.)
+Zeek connects to localhost:2181 by default.  To change this you can either set
+the environment variable ZEEK_HOSTS or add the option `-H`/`--hosts` to the
+zeek command.  The value should be a comma separated list of zookeeper servers
+to connect to e.g. host1:2181,host2:2181
 
 
 Drop Out - (Usage)
