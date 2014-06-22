@@ -3,6 +3,7 @@ from subprocess import call
 import tempfile
 import click
 from kazoo.client import KazooClient
+import six
 
 zk = None
 
@@ -102,7 +103,7 @@ def vi(path):
             tmp.write(node[0])
         tmp.flush()
         call([editor, tmp.name])
-        zk.set(path, open(tmp.name).read().strip())
+        zk.set(path, six.b(open(tmp.name).read().strip()))
 
 
 @cli.command()
@@ -151,7 +152,7 @@ def parents(path, ascending=False):
 
 def echo(path):
     """Echos a ZooKeeper node path and value"""
-    click.echo('%s - %s' % (path, zk.get(path)[0]))
+    click.echo('%s - %s' % (path, six.u(zk.get(path)[0])))
 
 
 def create_node(path, recursive=False):

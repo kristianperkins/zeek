@@ -13,6 +13,7 @@ setup(
     install_requires=[
         'Click',
         'Kazoo',
+        'six',
     ],
     entry_points='''
        [console_scripts]
