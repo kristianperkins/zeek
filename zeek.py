@@ -84,7 +84,9 @@ def set(path, value, create):
         PATH    the node to edit.
         VALUE   the value of the node"""
     create_node(path, create)
-    node = zk.set(path, value.encode('utf-16be'))
+    click.echo(type(value))
+    click.echo(type(six.b(value)))
+    node = zk.set(path, str(six.b(value)))
     click.echo(node[0])
 
 
@@ -103,6 +105,7 @@ def vi(path):
             tmp.write(node[0])
         tmp.flush()
         call([editor, tmp.name])
+        click.echo(type(six.b(open(tmp.name).read().strip())))
         zk.set(path, six.b(open(tmp.name).read().strip()))
 
 

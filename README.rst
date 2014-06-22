@@ -42,7 +42,7 @@ Example::
 
     $ zeek ls /animals
     /animals/ -
-    /animals/mamals -
+    /animals/mammals -
     /animals/reptiles -
     
 
@@ -55,8 +55,8 @@ Example::
     / -
     /animals -
     /animals/mammals -
+    /animals/mammals/foxes - ok
     /animals/reptiles -
-    /animals/reptiles/foxes - ok
     /animals/reptiles/snakes - rad
     /animals/reptiles/crocodilia -
     /animals/reptiles/crocodilia/alligators - hungry
