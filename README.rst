@@ -1,3 +1,4 @@
+
 Zeek: Zookeeper CLI for caged animals!
 ======================================
 
@@ -9,7 +10,7 @@ line application that makes it easy to see what is in all those cages.  This
 CLI works best in ZSH.
 
 Turn On - (Installation)
----------------------
+------------------------
 
 To install zeek:
 
@@ -17,7 +18,7 @@ To install zeek:
 
 
 Tune In - (Configuration)
-----------------------
+-------------------------
 
 Zeek connects to localhost:2181 by default.  To change this you can either set
 the environment variable ZEEK_HOSTS or add the option `-H`/`--hosts` to the
@@ -26,7 +27,7 @@ to connect to e.g. host1:2181,host2:2181
 
 
 Drop Out - (Usage)
----------------
+------------------
 
 The goal of zeek is to provide reasonable facimilies of the unix `find` and
 `grep` commands for the Zookeeper structure, so no new learning is required.
@@ -36,6 +37,7 @@ that node.
 
 ``ls``
     List nodes underneath the node you specified.
+
 Example::
 
     $ zeek ls /animals
@@ -46,6 +48,7 @@ Example::
 
 ``find``
     Example of find which will perform a recursive find from the root.
+
 ::
 
     $ zeek find /
@@ -65,10 +68,13 @@ match your search::
     $ zeek find '*crocodile*'
     /animals/reptiles/crocodilia/crocodiles - hungry
 
+
 ``grep``
-    Zeek Grep searches zookeeper node values similar to grep searching file
-contents.  Example of grep searching for the value `hungry` in any node::
+    Zeek Grep searches zookeeper node values.
+
+::
 
     $ zeek grep hungry
     /animals/reptiles/crocodilia/alligators - hungry
     /animals/reptiles/crocodilia/crocodiles - hungry
+
