@@ -57,6 +57,18 @@ def find(path):
 
 
 @cli.command()
+@click.argument('name')
+def locate(name):
+    """ Find all nodes matching name.
+
+    Arguments:
+        NAME    the name to match."""
+    for p in walk('/'):
+        if name == p.split('/')[-1]:
+            echo(p)
+
+
+@cli.command()
 @click.argument('path')
 @click.option('--recursive',
               '-r',
@@ -84,10 +96,7 @@ def set(path, value, create):
         PATH    the node to edit.
         VALUE   the value of the node"""
     create_node(path, create)
-    click.echo(type(value))
-    click.echo(type(six.b(value)))
-    node = zk.set(path, str(six.b(value)))
-    click.echo(node[0])
+    zk.set(path, six.b(str(value)))
 
 
 @cli.command()
@@ -153,11 +162,6 @@ def parents(path, ascending=False):
         yield '/' + '/'.join(parts[1:i+1])
 
 
-def echo(path):
-    """Echos a ZooKeeper node path and value"""
-    click.echo('%s - %s' % (path, six.u(zk.get(path)[0])))
-
-
 def create_node(path, recursive=False):
     if recursive:
         for parent in parents(path, ascending=True):
@@ -167,3 +171,8 @@ def create_node(path, recursive=False):
         click.echo('%s already exists' % path)
     else:
         zk.create(path)
+
+
+def echo(path):
+    """Echos a ZooKeeper node path and value"""
+    click.echo('%s - %s' % (path, six.u(zk.get(path)[0])))
