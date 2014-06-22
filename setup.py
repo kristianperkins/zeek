@@ -4,10 +4,10 @@ setup(
     name='zeek',
     author='Kristian Perkins',
     author_email='krockode@gmail.com',
-    version='0.1.3',
+    version='0.1.5',
     url='http://github.com/krockode/zeek',
     py_modules=['zeek'],
-    description='ZooKeeper CLI',
+    description='ZooKeeper CLI for caged animals',
     long_description=open('README.rst').read(),
     license='Apache 2.0',
     install_requires=[
