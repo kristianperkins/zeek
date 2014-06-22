@@ -14,7 +14,7 @@ Turn On - (Installation)
 
 To install zeek:
 
-    $ pip install git+https://github.com/krockode/zeek
+    $ pip install zeek
 
 
 Tune In - (Configuration)
