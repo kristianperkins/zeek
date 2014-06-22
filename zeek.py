@@ -108,7 +108,7 @@ def vi(path):
 @cli.command()
 @click.argument('path')
 def rm(path):
-    """ Edit a specified node
+    """ Remove a specified node
 
     Arguments:
         PATH    the node to edit."""
