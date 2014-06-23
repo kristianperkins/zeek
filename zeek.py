@@ -114,7 +114,6 @@ def vi(path):
             tmp.write(node[0])
         tmp.flush()
         call([editor, tmp.name])
-        click.echo(type(six.b(open(tmp.name).read().strip())))
         zk.set(path, six.b(open(tmp.name).read().strip()))
 
 
@@ -175,4 +174,4 @@ def create_node(path, recursive=False):
 
 def echo(path):
     """Echos a ZooKeeper node path and value"""
-    click.echo('%s - %s' % (path, six.u(zk.get(path)[0])))
+    click.echo('{0} - {1}'.format(path, zk.get(path)[0].decode('utf-8')))
