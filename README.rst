@@ -1,3 +1,6 @@
+.. image:: https://badge.waffle.io/krockode/zeek.png?label=ready&title=Ready 
+ :target: https://waffle.io/krockode/zeek
+ :alt: 'Stories in Ready'
 
 Zeek: Zookeeper CLI for caged animals!
 ======================================
