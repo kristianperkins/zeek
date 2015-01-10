@@ -1,9 +1,15 @@
-.. image:: https://badge.waffle.io/krockode/zeek.png?label=ready&title=Ready 
- :target: https://waffle.io/krockode/zeek
- :alt: 'Stories in Ready'
-
 Zeek: Zookeeper CLI for caged animals!
 ======================================
+
+.. image:: https://badge.fury.io/py/zeek.png
+    :target: http://badge.fury.io/py/zeek
+
+.. image:: https://pypip.in/d/zeek/badge.png
+    :target: https://crate.io/packages/zeek/
+
+.. image:: https://badge.waffle.io/krockode/zeek.png?label=ready&title=Ready 
+    :target: https://waffle.io/krockode/zeek
+    :alt: 'Stories in Ready'
 
 The Z and K are for `Zookeeper <http://zookeeper.apache.org>`_, the E's are
 just for fun.
